@@ -18,6 +18,7 @@
 package org.bitcoinj.core;
 
 import com.google.common.base.Objects;
+import com.google.common.math.LongMath;
 import org.bitcoinj.core.Block;
 import org.bitcoinj.core.StoredBlock;
 import org.bitcoinj.core.VerificationException;
@@ -154,7 +155,7 @@ public abstract class NetworkParameters {
     /**
      * The maximum money to be generated
      */
-    public static final Coin MAX_MONEY = COIN.multiply(MAX_COINS);
+    public static final Coin MAX_MONEY = new Coin(LongMath.checkedMultiply(MAX_COINS, 1));
 
     /** Alias for TestNet3Params.get(), use that instead. */
     @Deprecated

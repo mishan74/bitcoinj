@@ -83,7 +83,7 @@ public final class Coin implements Monetary, Comparable<Coin>, Serializable {
      */
     public final long value;
 
-    private Coin(final long satoshis) {
+    public Coin(final long satoshis) {
         this.value = satoshis;
     }
 
@@ -101,7 +101,7 @@ public final class Coin implements Monetary, Comparable<Coin>, Serializable {
      */
     @Override
     public long getValue() {
-        return value;
+        return 0;
     }
 
     /**
