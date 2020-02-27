@@ -101,7 +101,7 @@ public final class Coin implements Monetary, Comparable<Coin>, Serializable {
      */
     @Override
     public long getValue() {
-        return 0;
+        return value;
     }
 
     /**
