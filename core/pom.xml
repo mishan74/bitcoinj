@@ -25,7 +25,7 @@
         <version>0.14.7</version>
     </parent>
 
-    <artifactId>bitcoinj-core</artifactId>
+    <artifactId>core</artifactId>
 
     <name>bitcoinj</name>
     <description>A Java Bitcoin library</description>
